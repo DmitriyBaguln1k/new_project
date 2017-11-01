@@ -1,0 +1,527 @@
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-header {
+    background-image: url(../img/layer1.jpg);
+    padding-bottom: 15px;
+    background-repeat: no-repeat;
+}
+.main-nav{
+        width: 100%;
+    }
+    .main-nav li{
+        position: relative;
+    }
+    .main-nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+.main-nav a{
+    color: white;
+        font-size: 12px;
+        line-height: 69px;
+            text-transform: uppercase;
+        margin-left: 20px;
+        
+    }
+   .main-nav ul :first-child a  {
+        margin: 0;
+        
+    }
+   .main-nav li+li:after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 17px;
+        border-left: 1px dotted #685845;
+        left: -2%;
+        top: 26px;
+    }
+.popup-form {
+    display: none;
+}
+.mobile-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-contacts__phone {
+    color: #fff;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 23px;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+}
+
+.header-contacts span {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    color: #d3ac79;
+}
+
+.main-preview__title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.main-preview__title b {
+    color: #c19b6a;
+    letter-spacing: 18px;
+    display: block;
+}
+
+.main-preview__title h1 {
+    text-transform: uppercase;
+    display: block;
+    max-width: 286px;
+    color: white;
+    margin: 0;
+}
+
+.main-preview__title span {
+    color: #b7b7b7;
+    text-transform: uppercase;
+     font-size: 14px;
+    line-height: 14px;
+}
+
+.reserve-menu__reserve-btn {
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: #C09B6D;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.reserve-menu__reserve-btn::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../img/arrow-right.png);
+    background-repeat: no-repeat;
+    right: 11px;
+    top: 36%;
+}
+
+.about-hotel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-hotel b {
+    text-transform: uppercase;
+    color: #c19b6a;
+    letter-spacing: 18px;
+    padding-bottom: 17px;
+    padding-top: 22px;
+    display: block;
+}
+
+.about-hotel h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+
+.about-hotel p {
+    font-weight: lighter;
+}
+
+.about-hotel__flex-row p {
+    color: #808080
+}
+
+
+
+
+
+
+
+
+
+/* lap-top-version */
+@media (max-width: 991px) and (min-width: 768px){
+    .main-header{
+        padding-top: 15px;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .desktop-logo {
+    display: none;
+}
+    .container {
+    padding: 0 4%;
+    box-sizing: border-box;
+}
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header-contacts{
+        display: none
+    }
+    
+    .main-preview__title b{
+        font-size: 25px;
+        padding-bottom: 20px;
+        padding-top: 150px;
+    }
+    .main-preview__title h1{
+        position: relative;
+        letter-spacing: 2px;
+        font-size: 40px;
+        line-height: 50px;
+        padding-bottom: 20px;
+    }
+    .main-preview__title h1::after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 367px;
+        background-color: #b7b7b7;
+        opacity: 0.2;
+        bottom:1px;
+        left: 1px;
+    }
+    .main-preview__title span{
+            font-size: 18px;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+        padding-top: 20px;
+    }
+    .main-preview__details{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .main-preview__details a{
+        position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #C09B6D;
+    font-size: 14px;
+    min-width: 250px;
+    text-transform: uppercase;
+    color: #f2d1a6;
+    background: none;
+    transition: all 0.3s ease;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 8%;
+    padding-bottom: 2%;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-sizing: border-box;
+    }
+    .main-preview__details a::after{
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: url(../img/arrow-right-gold.png) no-repeat;
+            right: 15px;
+    top: 18px;
+    }
+    .main-preview__details span{
+        position: relative;
+    transform: rotate(90deg);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #c19b6a;
+    display: block;
+    font-weight: bold;
+        margin-top: 65px;
+    }
+    .main-preview__details span:after{
+        content: "";
+        width: 27px;
+        height: 40px;
+        position: absolute;
+        transform: rotate(-90deg);
+        bottom: -15px;
+        left: 77px;
+        background: url(../img/mouse.png) no-repeat;
+    }
+    .main-preview__details span:before{
+        content: "";
+        width: 16px;
+        height: 20px;
+        position: absolute;
+        transform: rotate(-90deg);
+        bottom: -3px;
+        left: 123px;
+        background: url(../img/arrow-down-small.png) no-repeat;
+    }
+    .main-preview__details p{
+        color: white;
+        font-size: 22px;
+        max-width: 251px;
+        text-align: right;
+        margin-top: 0px;
+    }
+    .reserve-menu__form {
+    display: none;
+}
+    .reserve-menu__reserve-btn {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 15px;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 143px;
+    margin-bottom: 20px;
+}
+    .about-hotel b{
+        font-size: 19px;
+        padding-bottom: 30px;
+        margin-top: 85px;
+    }
+        .about-hotel h2 {
+        margin: 0 0 30px;
+    font-size: 50px;
+            line-height: 57px;
+}
+
+.about-hotel p {
+font-size: 29px;
+    line-height: 35px;
+    margin: 0 0 30px;
+}
+
+.about-hotel__flex-row p {
+      font-size: 16px;
+    line-height: 25px;
+    margin: 0 0 35px;
+}
+    .about-hotel__more-information-btn{
+        display: none;
+    }
+}
+
+
+/* lap-top-version */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile-version */
+@media (max-width: 767px){
+.main-header {
+    background-position: -396px -3px;
+    padding-top: 15px;
+}
+
+.container {
+    padding: 0 4%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.desktop-logo {
+    display: none;
+}
+
+.header-contacts__confirm-btn {
+    display: none
+}
+    .main-nav{
+        background: url(../img/nav-mobile-layer.jpg) no-repeat;
+        background-size: cover;
+        
+        width: 100%;
+    }
+.main-nav ul{
+    flex-direction: column;
+}
+    .main-nav a{
+        margin: 0;
+        font-size: 14px;
+        line-height: 38px;
+        text-align: left;
+    }
+
+.main-preview__details {
+    display: none;
+}
+
+.reserve-menu__form {
+    display: none;
+}
+.about-hotel__flex-row p:last-child {
+    display: none;
+}
+.menu-toggle{
+	width:50px;
+	height:50px;
+	background:none;
+	position:relative;
+	cursor: pointer;
+	text-indent:-9999px;
+	overflow:hidden;
+	margin-top: 9px;
+}
+.menu-toggle:before,
+.menu-toggle:after,
+.menu-toggle span{
+	background:#fff;
+	position:absolute;
+	top: 37px;
+	left:25%;
+	right:25%;
+	height: 4px;
+	width: 38px;
+	margin-top:-2px;
+	transition:all 0.2s linear;
+}
+.menu-toggle:before,
+.menu-toggle:after{
+	content:'';
+	top: 15px;
+}
+.menu-toggle:after{
+    top: 26px;
+}
+/* close button transition */
+.close-btn span,
+.active .menu-toggle span{opacity:0;}
+.menu-toggle:hover{opacity:.9;}
+.close-btn:after,
+.close-btn:before,
+.active .menu-toggle:after,
+.active .menu-toggle:before{
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	transform:rotate(45deg);
+	top:16px;
+	left:15%;
+	right:15%;
+}
+.close-btn:after,
+.active .menu-toggle:after{
+	-moz-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+.mobile-wrapper {
+    padding-bottom: 13px;
+    border-bottom: 1px solid #d3ac79;
+}
+.header-contacts {
+    align-items: center;
+}
+.header-contacts__phone {
+    order: -1;
+    padding-top: 17px
+}
+.main-preview__title {
+    align-items: center;
+}
+.main-preview__title b {
+    font-size: 15px;
+    line-height: 15px;
+    padding-bottom: 17px;
+    padding-top: 247px;
+    padding-left: 22px;
+}
+.main-preview__title h1 {
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    padding-bottom: 17px;
+}
+.main-preview__title span {
+    padding-top: 22px;
+    padding-bottom: 19px;
+}
+.reserve-menu__reserve-btn {
+    width: 100%;
+    font-size: 21px;
+    line-height: 50px;
+    /* height: 50px; */
+    height: 50px;
+    /* padding-top: 19px; */
+    letter-spacing: 1px;
+}
+.about-hotel {
+    text-align: center;
+}
+.about-hotel b {
+    padding-left: 21px;
+    font-size: 15px;
+    line-height: 15px;
+}
+.about-hotel__more-information-btn {
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    border: 1px solid #C09B6D;
+    padding: 13px 10px 15px;
+    color: #b68c56;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.about-hotel__more-information-btn::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../img/arrow-down.png);
+    background-repeat: no-repeat;
+    right: 62px;
+    top: 17px;
+}
+    .about-hotel h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.about-hotel p {
+    font-size: 19px;
+    line-height: 22px;
+}
+
+.about-hotel__flex-row p {
+    font-size: 16px;
+    line-height: 21px;
+}
+}
+/* Mobile-version^^ */
